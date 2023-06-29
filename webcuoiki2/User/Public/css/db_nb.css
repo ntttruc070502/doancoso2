@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    background-color: rgb(155, 214, 238);
+    padding: 10px;
+}
+@media(max-width: 767px) {
+    img {
+        width: 100%;
+    }
+}
+.container{
+    width: 80%;
+}
+.container1{
+width: 100%;
+float: left;
+font-size: 20px;
+padding: 30px;
+}

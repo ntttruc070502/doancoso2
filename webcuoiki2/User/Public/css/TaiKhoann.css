@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family:'selimaregular';
+    src:url('https://themify.me/demo/themes/ultra-sushi/wp-content/themes/themify-ultra/skins/sushi/fonts/selima_-webfont.woff2') format('woff2'),
+         url('https://themify.me/demo/themes/ultra-sushi/wp-content/themes/themify-ultra/skins/sushi/fonts/selima_-webfont.woff') format('woff');
+    font-weight:400;
+    font-display:swap;
+    font-style:normal
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+} 
+.banner {
+    background-image: url(User/Public/img/bia/jpg);
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.banner .den{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.514);   
+}
+.banner .cot {
+    display: flex;
+    padding: 20px;
+}
+.banner .cot .logo{
+    color: white;
+    text-align: left;
+    width: 10%;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+}
+.banner .cot .menu{
+    width: 90%;
+    text-decoration: none;
+   
+}
+.banner .cot .menu ul{
+  
+   
+}
+.banner .cot .menu li{
+    list-style-type: none;
+    text-align: right;
+    
+   
+}
+.banner .cot .menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner .cot .menu li a:hover{
+    color: pink;
+}
+.banner .den .caption {
+    color: white;
+    
+}
+.banner .den .caption .logo {
+    color: yellow;  
+    width: 50%;
+    font-size: 80px;
+    font-family: 'Caveat', cursive;
+    padding-left: 30%;
+}
+.caption1 {
+    padding-left: 50%;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;  
+}
+
+.AboutUs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+}
+.AboutUs .trai{
+    width: 30%;
+}
+
+.AboutUs .trai img {
+    transition: 0.7s;
+    transform: translateX(100px);
+    width: 60%;
+    height: 70%;
+ 
+}
+.AboutUs .trai:hover img {
+    transition: 0.7s;
+    transform: translateX(100px);
+    width: 70%;
+    height: 70%;
+    
+ 
+}
+.AboutUs .phai{
+    width: 70%;
+    
+}
+.AboutUs .phai h1{
+    padding-top: 5%;
+    text-align: center;
+    font-family:  'Caveat', cursive;
+    font-size: 90px;
+    
+}
+.AboutUs .phai .cot1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.AboutUs .phai .cot2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+}
+.advertisement {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'selimaregular';
+    font-size: 70px;
+}
+.benefit2 {
+         
+            
+            position:relative;
+            left:0px;
+            animation-name:move_right;
+            animation-duration:8s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes move_right{
+            0%{left:0px;}
+            100%{left:420px;}
+        }
+.benefit1 {
+    list-style: none;
+    font-size: 22px;
+    margin-left: 70px;
+    margin-bottom: 300px;
+
+}
+.banner .menu .bars {
+    display: none;
+}
+.benefit1 .DK img {
+    margin-left: 40%;
+}
+@media all and (max-width: 800px) {
+.banner .cot .logo {
+    display: none;
+    }
+.banner .cot .menu li{
+    display: none;  
+}
+.banner .menu .bars {
+    color: #fff;
+    display: block;
+}
+.caption {
+    display: none;
+}
+.benefit1 .DK {
+    display: none;
+}
+}
+.banner .menu .bars {
+    width: 28px;
+    height: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s ;
+}
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+    opacity: 0;
+}
+.nav__mobile-list{
+    margin-top: 24px;
+    margin-left: 20px;
+}
+.nav_mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-size: 20px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 25px;
+    
+}
+.nav__input {
+    display: none;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
